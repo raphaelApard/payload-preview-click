@@ -1,0 +1,82 @@
+{
+  "name": "payload-preview-click",
+  "version": "0.1.0-alpha.0",
+  "description": "Click a block or field in the Payload live preview to open it in the edit form. A free, framework-agnostic click-to-edit for Payload 3.",
+  "keywords": [
+    "payload",
+    "payloadcms",
+    "payload-plugin",
+    "live-preview",
+    "click-to-edit",
+    "visual-editing"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./client": {
+      "types": "./dist/client.d.ts",
+      "import": "./dist/client.js"
+    },
+    "./message": {
+      "types": "./dist/message.d.ts",
+      "import": "./dist/message.js"
+    },
+    "./preview": {
+      "types": "./dist/preview.d.ts",
+      "import": "./dist/preview.js"
+    },
+    "./preview.global.js": "./dist/preview.global.js",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "pnpm clean && tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm typecheck && pnpm test && pnpm build",
+    "clean": "node -e \"require('fs').rmSync('dist', { recursive: true, force: true })\""
+  },
+  "peerDependencies": {
+    "@payloadcms/ui": "^3.0.0",
+    "next": ">=15.0.0",
+    "payload": "^3.0.0",
+    "react": "^19.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@10.13.1",
+  "devDependencies": {
+    "@payloadcms/ui": "3.93.0",
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "jsdom": "^31.0.0",
+    "next": "16.3.3",
+    "payload": "3.93.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "tsup": "^9.0.0",
+    "typescript": "5.7.3",
+    "vitest": "4.0.18"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}
