@@ -369,6 +369,11 @@ pnpm typecheck
 pnpm build      # tsup : ESM, .d.ts et le script IIFE dans dist/
 ```
 
+Pour essayer une copie locale dans une application, construisez-la puis ajoutez-la avec
+`"payload-preview-click": "file:../payload-preview-click"` (réinstallez après chaque build). Dans une application
+Next.js, préférez `file:` à `link:` : Turbopack ne résout pas les liens symboliques qui sortent de la racine du
+projet.
+
 ## Licence
 
 [MIT](LICENSE)

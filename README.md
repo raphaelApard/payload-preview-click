@@ -362,6 +362,10 @@ pnpm typecheck
 pnpm build      # tsup: ESM, .d.ts and the IIFE script in dist/
 ```
 
+To try a local checkout in an app, build it and add it as `"payload-preview-click": "file:../payload-preview-click"`
+(reinstall after each build). Prefer `file:` to `link:` in a Next.js app: Turbopack does not resolve symlinks that
+point outside the project root.
+
 ## License
 
 [MIT](LICENSE)
