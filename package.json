@@ -10,6 +10,14 @@
     "click-to-edit",
     "visual-editing"
   ],
+  "homepage": "https://github.com/raphaelApard/payload-preview-click#readme",
+  "bugs": {
+    "url": "https://github.com/raphaelApard/payload-preview-click/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raphaelApard/payload-preview-click.git"
+  },
   "license": "MIT",
   "type": "module",
   "sideEffects": false,
