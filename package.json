@@ -1,6 +1,6 @@
 {
   "name": "payload-preview-click",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0-alpha.1",
   "description": "Click a block or field in the Payload live preview to open it in the edit form. A free, framework-agnostic click-to-edit for Payload 3.",
   "keywords": [
     "payload",

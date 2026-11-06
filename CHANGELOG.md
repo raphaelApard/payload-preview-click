@@ -6,6 +6,13 @@ All notable changes to this project are documented in this file. The format is b
 
 ## [Unreleased]
 
+## [0.1.0-alpha.1] - 2026-11-07
+
+### Changed
+
+- Shorter README, in English and French, focused on setup.
+- `package.json` links to the GitHub repository, homepage and issue tracker.
+
 ## [0.1.0-alpha.0] - 2026-11-06
 
 First public alpha, extracted from a production Payload 3 multi-site backoffice.
@@ -23,3 +30,7 @@ First public alpha, extracted from a production Payload 3 multi-site backoffice.
   submissions, kept scroll position and selection across reloads, localizable labels.
 - Markers for the preview page: `blockMarker`/`BLOCKS_END` comments, `blockAttributes`, `editable` field attributes.
 - Link resolution helpers: `pageLinks`, `pageResolver`, `linkPath`.
+
+[Unreleased]: https://github.com/raphaelApard/payload-preview-click/compare/v0.1.0-alpha.1...HEAD
+[0.1.0-alpha.1]: https://github.com/raphaelApard/payload-preview-click/compare/v0.1.0-alpha.0...v0.1.0-alpha.1
+[0.1.0-alpha.0]: https://github.com/raphaelApard/payload-preview-click/releases/tag/v0.1.0-alpha.0
